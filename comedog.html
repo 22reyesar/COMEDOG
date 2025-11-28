@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comedog - Alimenta con Amor</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fafafa; }
+    header { background: #ff914d; color: white; padding: 20px; text-align: center; }
+    .img-pmv {
+  width: 100%;
+  height: auto;
+  border-radius: 0;   /* sin bordes curvos, opcional */
+  margin: 0;          /* elimina todo el margen */
+  display: block;     /* evita espacios extra */
+}
+ #inicio {
+  padding: 0;
+}
+#inicio h2 {
+  padding: 20px; /* Para que el título no quede pegado al borde */
+}
+#inicio p {
+  padding: 20px;
+}
+
+
+    nav { background: #333; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px; max-width: 1000px; margin: auto; }
+    h2 { color: #ff914d; }
+    .catalogo { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .producto { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .reseña { background: white; padding: 15px; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .foto-reseña {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* hace la foto circular */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+    footer { background: #333; color: white; padding: 20px; text-align: center; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header style="display:flex; align-items:center; gap:15px;">
+  <img src="img/logo.png" alt="Logo Comedog" 
+       style="width:80px; height:auto;">
+
+  <div>
+    <h1 style="margin:0;">COMEDOG – Alimenta con Amor</h1>
+    <p style="margin:0; color:#555;">Comida saludable para tu mascota y apoyo para perros sin hogar.</p>
+  </div>
+</header>
+
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#resenas">Reseñas</a>
+    <a href="#proyecto">Proyecto Social</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Producto Mínimo Viable (PMV)</h2>
+
+    <img src="img/PMV.png" alt="pmv Comedog" class="img-pmv">
+
+    <p>Comedog ofrece alimento natural, nutritivo y accesible para perros. Cada compra contribuye directamente al rescate, alimentación y tratamiento médico de animales sin hogar. ¡Tu mascota come sano y un perrito rescatado también!</p>
+    <h3>Promoción Especial</h3>
+    <ul>
+      <li>✔ 10% de descuento en tu primera compra.</li>
+      <li>✔ Por cada bolsa vendida, donamos una ración a un refugio aliado.</li>
+      <li>✔ Reporte mensual del impacto generado con tu compra.</li>
+    </ul>
+  </section>
+
+  <section id="catalogo">
+    <h2>Catálogo de Productos</h2>
+    <div class="catalogo">
+      <div class="producto">
+        <img src="img/comida-premium.png" alt="comida natural" style="width: 100%; border-radius: 10px;">
+
+        <h3>Comida Natural Premium</h3>
+        <p>Alimento balanceado hecho con pollo, zanahoria y arroz.</p>
+        <p><strong>Precio: S/ 35</strong></p>
+      </div>
+      <div class="producto">
+        <img src="img/snack-saludable.png" alt="comida natural" style="width: 100%; border-radius: 10px;">
+        <h3>Snacks Saludables</h3>
+        <p>Galletas caseras orgánicas para perros de todas las edades.</p>
+        <p><strong>Precio: S/ 12</strong></p>
+      </div>
+      <div class="producto">
+             <img src="img/comida-terapeutica.png" alt="comida natural" style="width: 100%; border-radius: 10px;">
+        <h3>Comida Terapéutica</h3>
+        <p>Especial para perritos en recuperación médica.</p>
+        <p><strong>Precio: S/ 40</strong></p>
+      </div>
+      <div class="producto">
+         <img src="img/merchandising.png" alt="comida natural" style="width: 100%; border-radius: 10px;">
+        <h3>Merchandising Solidario</h3>
+        <p>Collares, tazones y accesorios. Ganancias destinadas a rescates.</p>
+        <p><strong>Precio: desde S/ 20</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resenas">
+  <h2>Reseñas de Clientes</h2>
+
+  <div class="reseña">
+    <img src="img/american bully.jpg" alt="Foto de Ana" class="foto-reseña">
+    <p>“Mi perro Max ama la comida de Comedog. Se ve más activo y saludable.” – <strong>Ana L.</strong></p>
+  </div>
+
+  <div class="reseña">
+    <img src="img/labrador.jpg" alt="Foto de Carlos" class="foto-reseña">
+    <p>“Me encanta que con mi compra también ayudo a perritos de la calle.” – <strong>Carlos R.</strong></p>
+  </div>
+
+  <div class="reseña">
+    <img src="img/husky.jpg" alt="Foto de Lucía" class="foto-reseña">
+    <p>“Los snacks son perfectos para entrenar a mi cachorro.” – <strong>Lucía M.</strong></p>
+  </div>
+
+</section>
+
+
+  <section id="proyecto">
+    <h2>Proyecto Social</h2>
+    <p>Comedog destina el <strong>25% de sus ganancias</strong> al rescate y apoyo de animales abandonados. Este aporte se utiliza para:</p>
+    <ul>
+      <li>✔ Comprar alimento para refugios con recursos limitados.</li>
+      <li>✔ Financiar tratamientos veterinarios para perros enfermos o heridos.</li>
+      <li>✔ Organizar campañas de adopción, vacunación y desparasitación.</li>
+      <li>✔ Realizar talleres educativos sobre el respeto y cuidado animal.</li>
+    </ul>
+    <p>Gracias a este proyecto, muchas comunidades y refugios han logrado mejorar la calidad de vida de perros vulnerables.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Comedog – Alimenta con Amor</p>
+  </footer>
+</body>
+</html>
